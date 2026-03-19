@@ -55,3 +55,7 @@ function zeigeWitz() {
     let witz= witze[index];
     document.getElementById("witz-ausgabe").innerText=witz;
 }
+
+function scrollNachOben(){
+    window.scrollTo({ top: 0, behavior: 'smooth'});
+}
