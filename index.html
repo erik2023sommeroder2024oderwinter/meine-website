@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <link href="styles/style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>über mich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+      <div class= "kacheln">
+        <div class= "kachel"><a href="index.html">start</a></div>
+        <div class="kachel"><a href="hobbys.html">leichtathletik</a></div>
+        <div class="kachel"><a href="kontakt.html">kontakt</a></div>
+    </div>
+     </nav>
+     <button onclick="dunkelmodus()">Dunkelmodus an /aus</button> 
+     <br>
+      <button onclick="begruessung()">hallo unbekannter</button>
+      <br>
+       <button onclick="zeigeWitz()">neuer witz</button>
+      <p id="witz-ausgabe">Klick den button für einen witz</p>
+      
+
+     <h2>ERIK DORR 14.Jahre</h2>
+    <p>Praktikum bei Bechtle in der Abteilung Entwicklung</p>
+    <img src="https://tsv-solingen.de/wp-content/uploads/2022/06/IMG-20220527-WA0062.jpg" alt="über mich selbst (erik dorr)" />
+    <p><p></p>
+    (auf dem Bild oben war ich 9 Jahre alt),Ich bin Erik Dorr,14 Jahre alt und besuche gerade die 9D auf der Friedrich-Albert-Lange-Schule, kurz gesagt FALS. Meine Lieblingsfächer sind Sport, Englisch, Technik und teilweise Mathe. Besonders spannend finde ich es, wie in den technischen Fächern immer mehr über die Funktionsweise von Maschinen und Computern zu erfahren. In Sport kann ich mich richtig auspowern, und im Englischunterricht finde ich es toll, neue Wörter und Redewendungen zu lernen, die mir später auf Reisen oder in der Arbeit helfen könnten.
+    <p></p>
+    In meiner Freizeit mache ich Leichtathletik bei dem Verein TSV Aufderhöhe. Dort habe ich schon viele Erfolge erreicht, wie zum Beispiel bei den Deutschen Meisterschaften teilzunehmen oder bei den Nordrhein-Meisterschaften sowie bei den Winterwurf-Meisterschaften dabei zu sein. Es macht mir Spaß, mich ständig zu verbessern und neue persönliche Bestleistungen zu erzielen. Jedoch wurde ich Anfang 2021 aufgehalten, da ich mir meinen Knöchel verstaucht hatte. Das passierte, weil ich die großartige Idee hatte, eine Treppe von oben herunter zu springen – ein sehr dummer Moment, aus dem ich viel gelernt habe. Neben der Leichtathletik treffe ich mich in meiner Freizeit auch oft mit Freunden. Wir gehen ins Kino, übernachten beieinander oder zocken abends online auf dem Computer also alles mögliche. Es ist immer cool, sich auszutauschen und neue Spiele auszuprobieren. Meine Freunde und ich sind besonders begeistert von Autospielen wie Rocket league oder Shooter spiele wie Fortnite oder auch Strategiespiele wie Minecraft dadurch haben wir oft stundenlange Online-Sessions. Das stärkt nicht nur die Freundschaft, sondern fördert auch Teamarbeit und Kommunikation, was ich in vielen anderen Bereichen nützlich finde.
+    <p></p>
+    Mein Traumjob ist es, IT-Techniker zu werden, weil ich es mag, an verschiedenen Dingen rumzutüfteln und auszuprobieren. Schon als Kind habe ich mich oft gefragt, wie Computer und Technik im Allgemeinen funktionieren. Inzwischen weiß ich, dass es genau dieser Bereich ist, in dem ich später arbeiten möchte. 2025 habe ich ein 3-tägiges Praktikum absolviert, bei dem ich viele Einblicke in verschiedene Berufe bekommen konnte. Das Praktikum habe ich bei einer IT-Firma gemacht, aber auch beim Zahnarzt und in einem Lager gearbeitet. Obwohl die Arbeit beim Zahnarzt und die Lagerarbeit für mich nicht das Richtige waren, waren sie eine wertvolle Erfahrung, weil ich so herausfand, was ich wirklich machen möchte. Da die Entscheidung, was mir Spaß macht, ziemlich schnell klar war, habe ich mich dafür entschieden, mehr über den IT-Bereich zu erfahren.
+    <p></p>
+    Deshalb absolviere ich jetzt mein Betriebspraktikum bei Rheinland Bechte (Pipersberg 42), um noch mehr über den Beruf des IT-Technikers zu lernen. Ich bin gespannt, was ich in der Woche noch alles lernen werde und welche neuen Herausforderungen mich erwarten. Es gibt immer viel zu entdecken, und ich freue mich darauf, mehr in der IT kennenzulernen.
+    <p></p>
+    <p></p>
+    Erik Dorr
+    <p></p>
+    <script src="script.js"></script>
+
+    function wuerfeln()
+      let zahl= Math.floor(Math.random() * 6) + 1,
+
+    Let emojis =["https://emojipedia.org/keycap-digit-one","https://emojipedia.org/keycap-digit-two","https://emojipedia.org/keycap-digit-three","https://emojipedia.org/keycap-digit-four","https://emojipedia.org/keycap-digit-five","https://emojipedia.org/keycap-digit-six"];
+    document.getElementBYID("wuerfel-ausgabe").innerHTML
+    "<span style='font-size:28px´>" +emojis[zahl] + "</span>" +
+   "<br>du hast eine <strong>" + zahl +"<strong> gewürfelt!";
+    }
+
+
+
+</body>
+</html>
