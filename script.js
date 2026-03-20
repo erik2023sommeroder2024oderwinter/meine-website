@@ -59,3 +59,16 @@ function zeigeWitz() {
 function scrollNachOben(){
     window.scrollTo({ top: 0, behavior: 'smooth'});
 }
+
+
+function wuerfeln() {
+    let zahl= Math.floor(Math.random() * 6) + 1;
+    //alert(zahl);
+    let emojis =[" ","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣"];
+    document.getElementById("wuerfel-ausgabe").innerHTML= emojis[zahl] +"<br>du hast eine <strong>" + zahl +"<strong> gewürfelt!";
+}
+
+
+function scrollNachOben(){
+    window.scrollTo({ top: 0, behavior: 'smooth'});
+ }
