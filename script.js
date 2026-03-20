@@ -87,16 +87,16 @@ function stopTimer(){
 
 function easterEgg(){
 
-    document.getElementById("secret-image").style.distplay = "block";
+    document.getElementById("secret-image").style.display = "block";
 
     
-    let farben = ["#00833e," "#00b0ca", "#f59e0b", "#74c3c","#a855f7"];
+    let farben = ["#00833e", "#00b0ca", "#f59e0b", "#74c3c","#a855f7"];
     for (let i = 0; i < 80; i++) {
         let k = document.createElement("div");
         k.classList.add("konfetti");
         k.style.left = Math.random() * 100 + "vw";
         k.style.backgroundColor = farben[Math.floor(Math.random() * farben.length)];
-        k.style.animationDelay = bMath.random() * 1.5 + "s";
+        k.style.animationDelay = Math.random() * 1.5 + "s";
         document.body.appendChild(k);
 
         setTimeout(() => k.remove(), 3000);

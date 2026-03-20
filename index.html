@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -40,8 +42,7 @@
     <p></p>
     Erik 
     <p></p>
-    <script src="script.js"></script>
-   
+<!--   <script src="script.js"></script>--> 
 
 <h2>lust auf ein Würfelspiel?</h2>
 <p id="wuerfel-ausgabe">Noch nicht gewürfelt...</p>
@@ -50,10 +51,9 @@
 
  <button id="scroll-top" onclick="scrollNachOben()">Nach oben</button>
 
- <buttonid="secret-btn" onmousedeown="startTimer()" onmouseup="stopTimer()"
- onmouseleave="stopTimer()">Lieblings-Button</button>
+ <button id="secret-btn" onmousedown="startTimer()" onmouseup="stopTimer()" onmouseleave="stopTimer()">Oster-Button</button>
 
- <div id="secret-image">
+ <div id="secret-image"> 
   <img src="https://thumbs.dreamstime.com/b/dummes-lustiges-gesicht-16574458.jpg" alt="Überraschung!">
   <p> Du hast das EasterEgg gefunden!</p>
   </div>
