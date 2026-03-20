@@ -64,11 +64,41 @@ function scrollNachOben(){
 function wuerfeln() {
     let zahl= Math.floor(Math.random() * 6) + 1;
     //alert(zahl);
+    //document.getElementById("wuerfel-ausgabe").innerHTML ="<br>du hast eine <strong>" + zahl +"<strong> gewürfelt!";
     let emojis =[" ","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣"];
     document.getElementById("wuerfel-ausgabe").innerHTML= emojis[zahl] +"<br>du hast eine <strong>" + zahl +"<strong> gewürfelt!";
 }
 
-
 function scrollNachOben(){
     window.scrollTo({ top: 0, behavior: 'smooth'});
- }
+}
+
+
+let timer = null;
+
+function startTimer(){
+    timer = setTimeout(easterEgg, 3000);
+}
+
+
+function stopTimer(){
+    clearTimeout(timer);
+}
+
+function easterEgg(){
+
+    document.getElementById("secret-image").style.distplay = "block";
+
+    
+    let farben = ["#00833e," "#00b0ca", "#f59e0b", "#74c3c","#a855f7"];
+    for (let i = 0; i < 80; i++) {
+        let k = document.createElement("div");
+        k.classList.add("konfetti");
+        k.style.left = Math.random() * 100 + "vw";
+        k.style.backgroundColor = farben[Math.floor(Math.random() * farben.length)];
+        k.style.animationDelay = bMath.random() * 1.5 + "s";
+        document.body.appendChild(k);
+
+        setTimeout(() => k.remove(), 3000);
+    }
+}
